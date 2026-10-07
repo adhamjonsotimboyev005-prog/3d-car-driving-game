@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Drive Prototype</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loadingScreen">
+      <div class="loader">
+        <div class="spinner"></div>
+        <div>Loading...</div>
+      </div>
+    </div>
+
+    <div id="topBar">
+      <div id="speed">0 km/h</div>
+      <div id="gear">D</div>
+      <div id="status">Free Drive</div>
+    </div>
+
+    <div id="menuPanel">
+      <div class="panel">
+        <h1>URBAN DRIVE</h1>
+        <button class="menuBtn" data-mode="play">PLAY</button>
+        <button class="menuBtn" data-mode="garage">GARAGE</button>
+        <button class="menuBtn" data-mode="cars">CARS</button>
+        <button class="menuBtn" data-mode="map">MAP</button>
+        <button class="menuBtn" data-mode="race">RACE</button>
+        <button class="menuBtn" data-mode="settings">SETTINGS</button>
+      </div>
+    </div>
+
+    <div id="garageInfo">
+      <h2>Garage</h2>
+      <div id="garageStats"></div>
+    </div>
+
+    <div id="mobileControls">
+      <button id="leftBtn">◀</button>
+      <button id="brakeBtn">Brake</button>
+      <button id="gasBtn">Gas</button>
+      <button id="rightBtn">▶</button>
+      <button id="nitroBtn">Nitro</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
